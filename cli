@@ -1,0 +1,74 @@
+Git Command Cheat Sheet
+
+    Clone Repository (if you haven't already):
+
+    bash
+
+git clone <repository-url>
+
+Navigate to Your Repository:
+
+bash
+
+cd <repository-name>
+
+Fetch All Branches (to ensure you have the latest list of branches):
+
+bash
+
+git fetch --all
+
+Switch to the main Branch:
+
+bash
+
+git checkout main
+
+Pull Latest Changes from main:
+
+bash
+
+git pull origin main
+
+Create and Switch to a New Branch (replace <new-branch-name> with your branch name):
+
+bash
+
+git checkout -b <new-branch-name>
+
+Make Your Changes:
+
+    Edit, add, or delete files as needed in your project.
+
+Add Changes to Stage:
+
+bash
+
+git add .
+
+Commit Your Changes:
+
+bash
+
+git commit -m "Your commit message"
+
+Push Your Branch to Remote:
+
+bash
+
+git push -u origin <new-branch-name>
+
+Create Pull Request:
+
+    For CLI: You need to use a tool like Hub or GitHub CLI.
+        With GitHub CLI, for example:
+
+        bash
+
+        gh pr create --base main --head <new-branch-name> --title "Your PR title" --body "Description of changes"
+
+    Alternatively, you can create a pull request via your repository's website on GitHub/GitLab/Bitbucket.
+
+Submit Pull Request:
+
+    Finalize and submit the pull request through the web interface or CLI tool.
